@@ -1,0 +1,37 @@
+import pygame
+from pygame.locals import *
+pygame.init()
+
+# GAME INFO
+WIDTH, HEIGHT = 600, 750
+
+# BOARD
+BOARD_WIDTH, BOARD_HEIGHT = 600, 600
+ROWS, COLS = 8, 8
+SQUARE_SIZE = BOARD_WIDTH // COLS
+
+# PIECE
+PADDING = 10
+OUTLINE = 3
+
+# RGB
+BLUE = (133, 193, 233)
+GREEN = (118, 215, 196)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+DARK = ( 46, 64, 83 )
+RED = (180, 20, 20)
+GRAY = (100, 100, 100)
+LIGHT_GRAY = (185,185,185)
+
+LIGHTPINK1 = (250, 200, 250)
+LIGHTPINK2 = (150, 205, 245)
+LIGHTPINK3 = (150, 210, 240)
+LIGHTPINK4 = (100, 215, 235)
+ENDPAGECOLOR = (120, 40, 40)
+
+RED_TURN = False
+WHITE_TURN = True
+
+# Font
+MYFONT = pygame.font.SysFont('comicsans', 30)
