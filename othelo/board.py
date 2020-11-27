@@ -94,12 +94,13 @@ class Board:
             return "end"
 
     def draw_end_game(self, win):
-        pygame.draw.rect(win, ENDPAGECOLOR, (2 * SQUARE_SIZE, 2 * SQUARE_SIZE,
-                                             SQUARE_SIZE * 4, SQUARE_SIZE * 4))
 
+        winner = 'White' if (self.logic.white_score >= self.logic.red_score) else 'Red'
         end = pygame.image.load('othelo/assets/end.png')
         end = pygame.transform.scale(end, (4 * SQUARE_SIZE, 4 * SQUARE_SIZE))
         win.blit(end, (2 * SQUARE_SIZE, 2 * SQUARE_SIZE))
+        check = MYFONT.render(str(winner + " wins!"), True, WHITE)
+        win.blit(check, (self.PIECE_PADDING * 6, HEIGHT - (1.5 * self.PIECE_PADDING)))
 
         # show winner and scores
         # show buutonsfor  1.restart , 2.end

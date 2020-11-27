@@ -40,7 +40,7 @@ class Piece:
             pygame.draw.circle(win, BLACK, (self.x, self.y), radius + OUTLINE)
             pygame.draw.circle(win, RED, (self.x, self.y), radius)
         elif piece_sit == Piece_Situation.CHOOSABLE:
-            pygame.draw.circle(win, WHITE, (self.x, self.y), radius - OUTLINE)
+            pygame.draw.circle(win, DARK, (self.x, self.y), radius - OUTLINE)
             pygame.draw.circle(win, LIGHTPINK1, (self.x, self.y), radius - 2 * OUTLINE)
             pygame.draw.circle(win, LIGHTPINK2, (self.x, self.y), radius - 3 * OUTLINE)
             pygame.draw.circle(win, LIGHTPINK3, (self.x, self.y), radius - 4 * OUTLINE)
