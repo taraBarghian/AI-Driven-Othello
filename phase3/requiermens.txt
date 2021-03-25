@@ -1,0 +1,4 @@
+numpy
+pygame
+pygame_menu
+pyperclip==1.8.1
